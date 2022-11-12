@@ -8,10 +8,38 @@ body{
     padding: 0;
     margin: 0;
     background-size: cover;
-    background: black;
+    background: #222;
 }
 
 .h1 {
     color: aliceblue;
     text-align: center;
+    
 }
+
+.h1.btn {
+    float: left;
+    border: 1px solid green;
+}
+
+
+.textBox{
+    position: relative;
+    }
+
+    .textarea{
+    position: absolute;
+    left: 50%;
+    top: 0.00001px; 
+    transform: translate(-50%, 50%);
+    float: right;
+
+}
+    .clipboard-btn{
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        transform: translate(-50%, 50%); 
+         
+  
+    }
