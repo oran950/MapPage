@@ -3,19 +3,21 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-
+   
     <title>MAP</title>
 </head>
 <body onload="myMap()"> 
     <!--find how to move API src to script.js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkNut7tJiQ8vQc5alyON6jJTx2OZLhvqI&callback=myMap" defer async></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkNut7tJiQ8vQc5alyON6jJTx2OZLhvqI&libraries=drawing&callback=myMap">
+    </script>   
     
     <div class="h1">
-    <h1 >WORLD MAP</h1>
+    <h1 >MAP-TOOLS</h1>
     <div class="btn">
-    <button type="reset">tools</button>
-    <button   onclick="myMap()" class="btn" >refresh</button>
-    <button   onclick="" class="btn">polygon</button></div>
+    <!-- <button type="reset">Marker</button> -->
+    <button  onclick="myMap()" class="btn" >refresh</button>
+    <!-- <button   onclick="my_polygon()" class="btn">polygon</button></div> -->
     </div>
     
 
@@ -30,28 +32,7 @@
 
     <div id="map"></div>   <!---The div element for the map -->
     <script src="script.js" defer async></script>
-
-
-
-	<!--<div class="col-12 col-lg-2 mb-2">
-        <span class="label">Drawing tools</span>
-        <div class="btn-group btn-group-sm w-100 mt-1">
-            <span href="" id="d_move" title="Move map or drag objects" class="btn neo-text-primary"><i class="far fa-hand-paper"></i></span>
-            <span href="" id="d_marker" title="Marker" class="btn neo-text-primary"><i class="fas fa-map-marker-alt"></i></span>
-            <span href="" id="d_circle" title="Draw circles" class="btn neo-text-primary"><i class="fas fa-circle"></i></span>
-            <span href="" id="d_square" title="Draw rectangles" class="btn neo-text-primary"><i class="fas fa-square"></i></span>
-            <span href="" id="d_poly" title="Draw polygons" class="btn neo-text-primary"><i class="fas fa-draw-polygon"></i></span>
-            <span href="" id="d_lines" title="Draw Polylines" class="btn neo-text-primary"><i class="fas fa-bezier-curve"></i></span>
-        </div>
-    </div>-->
-   
-
-    
-    
-
-    
-
-   
+  
         
     
     </body>
